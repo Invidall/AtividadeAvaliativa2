@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background5">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/olho"
+        android:elevation="5dp"/>
+
+        <!-- O ID é de um app ficticio "lookout", ia seguir com isso mas alterei o texto -->
+    <TextView
+        android:id="@+id/lookoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Atividade Avaliativa 2"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:alpha="0"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+    </RelativeLayout>
